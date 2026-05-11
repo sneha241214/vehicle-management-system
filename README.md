@@ -1,153 +1,366 @@
-<<<<<<< HEAD
-# Vehicle Service Management System
+# 🚗 Vehicle Service Management System
 
-A full-stack MVP for managing vehicle components, vehicle service records, simulated billing, and revenue reporting.
+A full-stack Vehicle Service Management System built using Django REST Framework and React.js.  
+The application helps service centers manage vehicle repairs, components, billing, and revenue analytics through a responsive dashboard.
 
-## Features
+---
 
-- Component CRUD with stock quantity and repair/replacement pricing
-- Vehicle CRUD with search by vehicle number and status filters
-- Service record creation with repair/replace billing logic
-- Automatic bill calculation: `(component_price x quantity) + labor_charge`
-- Replacement stock validation and stock deduction
-- Payment summary / invoice screen
-- Daily, monthly, and yearly revenue APIs and charts
-- Responsive React dashboard with Tailwind CSS
-- Loading states, status badges, and toast notifications
-- Django unit tests for models, APIs, and bill calculation logic
+# 📌 Project Overview
 
-## Tech Stack
+This project was developed as a Full-Stack Assignment to manage:
 
-- Backend: Django, Django REST Framework, SQLite, django-cors-headers
-- Frontend: React.js, Vite, Axios, React Router DOM, Tailwind CSS, Recharts
+- Vehicle repair and service records
+- Component registration and pricing
+- Repair/replacement workflows
+- Billing and payment simulation
+- Revenue analytics dashboard
 
-## Project Structure
+The system provides complete CRUD functionality with automatic bill calculation and responsive revenue charts.
 
-```text
-backend/
-  components/
-  dashboard/
-  services/
-  vehicles/
-  vehicle_service/
-  manage.py
-  requirements.txt
-frontend/
-  src/
-    components/
-    pages/
-    api.js
-    App.jsx
-  package.json
-  tailwind.config.js
-README.md
+---
+
+# ✨ Features
+
+## 🔧 Component Registration & Pricing Management
+- Add, update, delete, and view vehicle components
+- Store repair pricing and replacement/purchase pricing
+- Manage stock quantities
+- Search and filter components
+
+## 🚗 Vehicle Repair Tracking
+- Register vehicles requiring service
+- Track repair status
+- Store issue descriptions and vehicle details
+
+## 🛠 Issue Reporting & Component Selection
+- Create repair/service records
+- Select repair or replacement service
+- Add labor charges and component quantities
+
+## 💳 Billing & Payment Simulation
+- Automatic final bill generation
+- Simulated payment workflow
+- Invoice/payment summary screen
+- Automatic stock deduction during replacement
+
+## 📊 Revenue Analytics Dashboard
+- Daily revenue charts
+- Monthly revenue charts
+- Yearly revenue charts
+- Responsive graphs using Recharts
+
+## ✅ Additional Features
+- RESTful APIs
+- Responsive UI using Tailwind CSS
+- Toast notifications
+- Loading states
+- Error handling & validation
+- Unit testing support
+
+---
+
+# 🛠 Tech Stack
+
+## Backend
+- Django
+- Django REST Framework
+- SQLite
+- django-cors-headers
+
+## Frontend
+- React.js
+- Vite
+- Axios
+- React Router DOM
+- Tailwind CSS
+- Recharts
+
+---
+
+# 📂 Project Structure
+
+```bash
+vehicle-management-system/
+│
+├── backend/
+│   ├── components/
+│   ├── vehicles/
+│   ├── services/
+│   ├── dashboard/
+│   ├── vehicle_service/
+│   ├── manage.py
+│   ├── requirements.txt
+│   └── db.sqlite3
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── api.js
+│   │   └── App.jsx
+│   │
+│   ├── package.json
+│   ├── vite.config.js
+│   └── tailwind.config.js
+│
+└── README.md
 ```
 
-## Backend Setup
+---
+
+# ⚙️ Installation & Setup
+
+## 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/your-username/vehicle-management-system.git
+
+cd vehicle-management-system
+```
+
+---
+
+# 🔙 Backend Setup
+
+## Create Virtual Environment
 
 ```bash
 cd backend
+
 python -m venv .venv
+```
+
+## Activate Virtual Environment
+
+### Windows
+
+```bash
 .venv\Scripts\activate
+```
+
+### macOS/Linux
+
+```bash
+source .venv/bin/activate
+```
+
+---
+
+## Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
+
+---
+
+## Run Migrations
+
+```bash
 python manage.py migrate
+```
+
+---
+
+## Start Backend Server
+
+```bash
 python manage.py runserver
 ```
 
-The backend runs at `http://127.0.0.1:8000`.
+Backend URL:
 
-## Frontend Setup
+```bash
+http://127.0.0.1:8000
+```
+
+---
+
+# 🌐 Frontend Setup
+
+## Navigate to Frontend
 
 ```bash
 cd frontend
+```
+
+---
+
+## Install Dependencies
+
+```bash
 npm install
+```
+
+---
+
+## Start Frontend Development Server
+
+```bash
 npm run dev
 ```
 
-The frontend runs at `http://localhost:5173`.
+Frontend URL:
 
-If your backend uses a different URL, create `frontend/.env`:
+```bash
+http://localhost:5173
+```
+
+---
+
+# 🔐 Environment Variables
+
+Create a `.env` file inside the frontend folder:
 
 ```env
 VITE_API_URL=http://127.0.0.1:8000/api
 ```
 
-## API Endpoints
+---
 
-### Components
+# 📡 API Endpoints
 
-- `GET /api/components/`
-- `POST /api/components/`
-- `GET /api/components/{id}/`
-- `PUT /api/components/{id}/`
-- `DELETE /api/components/{id}/`
+# Components APIs
 
-Query filters:
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/components/` | Get all components |
+| POST | `/api/components/` | Create component |
+| GET | `/api/components/{id}/` | Get single component |
+| PUT | `/api/components/{id}/` | Update component |
+| DELETE | `/api/components/{id}/` | Delete component |
 
-- `GET /api/components/?search=brake`
-- `GET /api/components/?type=engine`
+### Filters
 
-### Vehicles
-
-- `GET /api/vehicles/`
-- `POST /api/vehicles/`
-- `GET /api/vehicles/{id}/`
-- `PUT /api/vehicles/{id}/`
-- `DELETE /api/vehicles/{id}/`
-
-Query filters:
-
-- `GET /api/vehicles/?search=MH12`
-- `GET /api/vehicles/?status=Pending`
-
-### Services
-
-- `GET /api/services/`
-- `POST /api/services/`
-- `GET /api/services/{id}/`
-- `PUT /api/services/{id}/`
-- `DELETE /api/services/{id}/`
-
-Query filters:
-
-- `GET /api/services/?vehicle=1`
-- `GET /api/services/?service_type=Repair`
-
-### Revenue
-
-- `GET /api/revenue/daily/`
-- `GET /api/revenue/monthly/`
-- `GET /api/revenue/yearly/`
-
-## Service Billing
-
-For `Repair`, the API uses `repair_price`.
-
-For `Replace`, the API uses `purchase_price`.
-
-Final total:
-
-```text
-(component_price x quantity) + labor_charge
+```bash
+/api/components/?search=brake
+/api/components/?type=engine
 ```
 
-## Tests
+---
+
+# Vehicles APIs
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/vehicles/` | Get all vehicles |
+| POST | `/api/vehicles/` | Create vehicle |
+| GET | `/api/vehicles/{id}/` | Get single vehicle |
+| PUT | `/api/vehicles/{id}/` | Update vehicle |
+| DELETE | `/api/vehicles/{id}/` | Delete vehicle |
+
+### Filters
+
+```bash
+/api/vehicles/?search=MH12
+/api/vehicles/?status=Pending
+```
+
+---
+
+# Services APIs
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/services/` | Get all services |
+| POST | `/api/services/` | Create service |
+| GET | `/api/services/{id}/` | Get single service |
+| PUT | `/api/services/{id}/` | Update service |
+| DELETE | `/api/services/{id}/` | Delete service |
+
+### Filters
+
+```bash
+/api/services/?vehicle=1
+/api/services/?service_type=Repair
+```
+
+---
+
+# Revenue APIs
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/revenue/daily/` | Daily revenue |
+| GET | `/api/revenue/monthly/` | Monthly revenue |
+| GET | `/api/revenue/yearly/` | Yearly revenue |
+
+---
+
+# 💰 Billing Logic
+
+## Repair Service
+
+```text
+repair_price × quantity + labor_charge
+```
+
+## Replacement Service
+
+```text
+purchase_price × quantity + labor_charge
+```
+
+---
+
+# 🧪 Running Tests
 
 ```bash
 cd backend
+
 python manage.py test
 ```
 
-## Screenshots
+Unit tests cover:
+- Models
+- APIs
+- Billing calculations
+- Service validations
 
-Add screenshots here after running the application:
+---
+
+# 📷 Screenshots
+
+Add screenshots here:
 
 - Dashboard
-- Components
-- Vehicles
-- Services
-- Invoice
-=======
-# vehicle-management-system
-Vehicle Service Management System using Django REST Framework and React with CRUD operations, billing, and analytics dashboard.
->>>>>>> 8ab7d437960112a6da1e28400175806a3a34d2d5
+- Components Management
+- Vehicle Registration
+- Service Management
+- Billing/Invoice Screen
+- Revenue Analytics Dashboard
+
+---
+
+# 🚀 Future Enhancements
+
+- JWT Authentication
+- Role-Based Access Control
+- PDF Invoice Generation
+- Email Notifications
+- PostgreSQL Support
+- Docker Deployment
+- Online Payment Integration
+
+---
+
+# ✅ Assignment Requirements Covered
+
+✔ Component Registration & Pricing Management  
+✔ Vehicle Repair Tracking  
+✔ Issue Reporting & Component Selection  
+✔ Final Price Calculation & Payment Simulation  
+✔ Revenue Analytics Dashboard  
+✔ Responsive Frontend Design  
+✔ REST API Development  
+✔ Unit Testing  
+✔ Error Handling & Validation  
+
+---
+
+# 👨‍💻 Author
+
+**Sneha**  
+Full-Stack Developer | Django & React Developer
+
+---
