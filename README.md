@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Vehicle Service Management System
 
 A full-stack MVP for managing vehicle components, vehicle service records, simulated billing, and revenue reporting.
@@ -146,3 +147,7 @@ Add screenshots here after running the application:
 - Vehicles
 - Services
 - Invoice
+=======
+# vehicle-management-system
+Vehicle Service Management System using Django REST Framework and React with CRUD operations, billing, and analytics dashboard.
+>>>>>>> 8ab7d437960112a6da1e28400175806a3a34d2d5
