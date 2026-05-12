@@ -1,11 +1,11 @@
-# 🚗 Vehicle Service Management System
+# Vehicle Service Management System
 
 A full-stack Vehicle Service Management System built using Django REST Framework and React.js.  
 The application helps service centers manage vehicle repairs, components, billing, and revenue analytics through a responsive dashboard.
 
 ---
 
-# 📌 Project Overview
+# Project Overview
 
 This project was developed as a Full-Stack Assignment to manage:
 
@@ -19,37 +19,37 @@ The system provides complete CRUD functionality with automatic bill calculation 
 
 ---
 
-# ✨ Features
+# Features
 
-## 🔧 Component Registration & Pricing Management
+## Component Registration & Pricing Management
 - Add, update, delete, and view vehicle components
 - Store repair pricing and replacement/purchase pricing
 - Manage stock quantities
 - Search and filter components
 
-## 🚗 Vehicle Repair Tracking
+## Vehicle Repair Tracking
 - Register vehicles requiring service
 - Track repair status
 - Store issue descriptions and vehicle details
 
-## 🛠 Issue Reporting & Component Selection
+## Issue Reporting & Component Selection
 - Create repair/service records
 - Select repair or replacement service
 - Add labor charges and component quantities
 
-## 💳 Billing & Payment Simulation
+## Billing & Payment Simulation
 - Automatic final bill generation
 - Simulated payment workflow
 - Invoice/payment summary screen
 - Automatic stock deduction during replacement
 
-## 📊 Revenue Analytics Dashboard
+## Revenue Analytics Dashboard
 - Daily revenue charts
 - Monthly revenue charts
 - Yearly revenue charts
 - Responsive graphs using Recharts
 
-## 🔷 Additional Features
+## Additional Features
 - RESTful APIs
 - Responsive UI using Tailwind CSS
 - Toast notifications
@@ -59,7 +59,7 @@ The system provides complete CRUD functionality with automatic bill calculation 
 
 ---
 
-# 🛠 Tech Stack
+# Tech Stack
 
 ## Backend
 - Django
@@ -77,7 +77,7 @@ The system provides complete CRUD functionality with automatic bill calculation 
 
 ---
 
-# 📂 Project Structure
+# Project Structure
 
 ```bash
 vehicle-management-system/
@@ -108,9 +108,9 @@ vehicle-management-system/
 
 ---
 
-# ⚙️ Installation & Setup
+# Installation & Setup
 
-## 1️⃣ Clone Repository
+## Clone Repository
 
 ```bash
 git clone https://github.com/your-username/vehicle-management-system.git
@@ -120,7 +120,7 @@ cd vehicle-management-system
 
 ---
 
-# 🔙 Backend Setup
+# Backend Setup
 
 ## Create Virtual Environment
 
@@ -176,7 +176,7 @@ http://127.0.0.1:8000
 
 ---
 
-# 🌐 Frontend Setup
+# Frontend Setup
 
 ## Navigate to Frontend
 
@@ -208,7 +208,7 @@ http://localhost:5173
 
 ---
 
-# 🔐 Environment Variables
+# Environment Variables
 
 Create a `.env` file inside the frontend folder:
 
@@ -218,7 +218,7 @@ VITE_API_URL=http://127.0.0.1:8000/api
 
 ---
 
-# 📡 API Endpoints
+# API Endpoints
 
 # Components APIs
 
@@ -287,7 +287,7 @@ VITE_API_URL=http://127.0.0.1:8000/api
 
 ---
 
-# 💰 Billing Logic
+# Billing Logic
 
 ## Repair Service
 
@@ -303,7 +303,7 @@ purchase_price × quantity + labor_charge
 
 ---
 
-# 🧪 Running Tests
+# Running Tests
 
 ```bash
 cd backend
@@ -319,7 +319,7 @@ Unit tests cover:
 
 ---
 
-# 📷 Screenshots
+# Screenshots
 
 Add screenshots here:
 
@@ -346,14 +346,14 @@ Add screenshots here:
 ---
 ---
 
-# 📹 Demo Video
+# Demo Video
 
 https://github.com/user-attachments/assets/b506f5ff-a4e0-4f22-99e2-6cddbcd23d5a
 
 ---
 
 
-# 🚀 Future Enhancements
+# Future Enhancements
 
 - JWT Authentication
 - Role-Based Access Control
@@ -365,17 +365,17 @@ https://github.com/user-attachments/assets/b506f5ff-a4e0-4f22-99e2-6cddbcd23d5a
 
 ---
 
-# 🔵 Assignment Requirements Covered
+# Assignment Requirements Covered
 
-✔ Component Registration & Pricing Management  
-✔ Vehicle Repair Tracking  
-✔ Issue Reporting & Component Selection  
-✔ Final Price Calculation & Payment Simulation  
-✔ Revenue Analytics Dashboard  
-✔ Responsive Frontend Design  
-✔ REST API Development  
-✔ Unit Testing  
-✔ Error Handling & Validation  
+ Component Registration & Pricing Management  
+ Vehicle Repair Tracking  
+ Issue Reporting & Component Selection  
+ Final Price Calculation & Payment Simulation  
+ Revenue Analytics Dashboard  
+ Responsive Frontend Design  
+ REST API Development  
+ Unit Testing  
+ Error Handling & Validation  
 
 ---
 
