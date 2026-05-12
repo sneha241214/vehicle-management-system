@@ -343,9 +343,15 @@ Add screenshots here:
 
 <img width="1366" height="768" alt="Revenue Analytics Dashboard1" src="https://github.com/user-attachments/assets/0be921bd-be3c-48d8-87a3-a92e027c0fa7" />
 
-
-
 ---
+```
+##📹 Demo Video
+
+
+https://github.com/user-attachments/assets/b506f5ff-a4e0-4f22-99e2-6cddbcd23d5a
+
+
+```
 
 # 🚀 Future Enhancements
 
