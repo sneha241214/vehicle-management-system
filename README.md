@@ -49,7 +49,7 @@ The system provides complete CRUD functionality with automatic bill calculation 
 - Yearly revenue charts
 - Responsive graphs using Recharts
 
-## ✅ Additional Features
+## 🔷 Additional Features
 - RESTful APIs
 - Responsive UI using Tailwind CSS
 - Toast notifications
@@ -344,7 +344,7 @@ Add screenshots here:
 
 ---
 
-# ✅ Assignment Requirements Covered
+# 🔵 Assignment Requirements Covered
 
 ✔ Component Registration & Pricing Management  
 ✔ Vehicle Repair Tracking  
