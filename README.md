@@ -367,15 +367,15 @@ https://github.com/user-attachments/assets/b506f5ff-a4e0-4f22-99e2-6cddbcd23d5a
 
 # Assignment Requirements Covered
 
- Component Registration & Pricing Management  
- Vehicle Repair Tracking  
- Issue Reporting & Component Selection  
- Final Price Calculation & Payment Simulation  
- Revenue Analytics Dashboard  
- Responsive Frontend Design  
- REST API Development  
- Unit Testing  
- Error Handling & Validation  
+- Component Registration & Pricing Management  
+- Vehicle Repair Tracking  
+- Issue Reporting & Component Selection  
+- Final Price Calculation & Payment Simulation  
+- Revenue Analytics Dashboard  
+- Responsive Frontend Design  
+- REST API Development  
+- Unit Testing  
+- Error Handling & Validation  
 
 ---
 
