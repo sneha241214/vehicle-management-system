@@ -324,11 +324,26 @@ Unit tests cover:
 Add screenshots here:
 
 - Dashboard
+  <img width="1366" height="768" alt="Revenue Analytics Dashboard1" src="https://github.com/user-attachments/assets/9767ecf2-4eb0-40f5-b1db-37284b5f9184" />
+
+
 - Components Management
+<img width="1366" height="768" alt="Components" src="https://github.com/user-attachments/assets/efa6c185-1de6-4680-a8c1-db9daf359c2f" />
+
 - Vehicle Registration
+  <img width="1366" height="768" alt="Vehicle Registration" src="https://github.com/user-attachments/assets/8ac63efc-1775-4a38-b159-24ccc1123889" />
+
 - Service Management
+<img width="1366" height="768" alt="Service" src="https://github.com/user-attachments/assets/203012c2-bcc3-4862-aac5-ff1eb77ea2be" />
+
 - Billing/Invoice Screen
+  <img width="1366" height="768" alt="BillingInvoice Screen" src="https://github.com/user-attachments/assets/fc756c93-4ad7-4421-93bb-541df9916a8d" />
+
 - Revenue Analytics Dashboard
+
+<img width="1366" height="768" alt="Revenue Analytics Dashboard1" src="https://github.com/user-attachments/assets/0be921bd-be3c-48d8-87a3-a92e027c0fa7" />
+
+
 
 ---
 
@@ -358,9 +373,3 @@ Add screenshots here:
 
 ---
 
-# 👨‍💻 Author
-
-**Sneha**  
-Full-Stack Developer | Django & React Developer
-
----
